@@ -13,7 +13,7 @@ This project was created to:
 
 ## 🌐 Live Demo
 
-[https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)
+[https://github-repo-explorer-sigma.vercel.app/](https://github-repo-explorer-sigma.vercel.app/)
 
 ## 🛠️ Built With
 
