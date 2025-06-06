@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitHub Repo Explorer
 
-## Getting Started
+A simple React + Next.js web app that allows users to search for a GitHub username and view their public repositories. It was built to practice using external APIs, working with JSON data, and rendering it in a clean, responsive UI using Tailwind CSS.
 
-First, run the development server:
+## 🧠 Purpose
 
+This project was created to:
+- Practice calling public APIs using `fetch`
+- Work with React state and event handling
+- Learn how to map and display real-time data
+- Explore GitHub's REST API
+- Use Tailwind CSS for fast, utility-based styling
+
+## 🌐 Live Demo
+
+[https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)
+
+## 🛠️ Built With
+
+- [Next.js 14 (App Router)](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GitHub REST API](https://docs.github.com/en/rest)
+- Deployed on [Vercel](https://vercel.com/)
+
+## 🚀 Features
+
+- Enter a GitHub username and fetch public repositories
+- Display name, description, star count, and fork count
+- Clickable links to view the repositories on GitHub
+- Responsive layout using Tailwind
+- Clean error handling and simple form UX
+
+## 📦 How to Run Locally
+
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/github-repo-explorer.git
+cd github-repo-explorer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Run the development server**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open your browser and go to `http://localhost:3000`
 
-## Learn More
+## 🧪 API Reference
 
-To learn more about Next.js, take a look at the following resources:
+This project uses the following endpoint from GitHub’s REST API:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+GET https://api.github.com/users/{username}/repos
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Returns a list of public repositories for the specified GitHub user.
 
-## Deploy on Vercel
+## 📸 Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+_Add screenshots here if you'd like. Example:_
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![App Screenshot](./screenshot.png)
+
+## 📝 License
+
+This project is for educational/demo use only. No affiliation with GitHub.
+
+## 👤 Author
+
+Built by [Your Name](https://github.com/your-username)
+
+If you found this useful, feel free to ⭐ the repo or fork it!
